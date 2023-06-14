@@ -46,7 +46,11 @@ To store and manage data, a database structure was created based on the linked t
 
 ## To install you will need:
 
-1.Make a clone of the repository <>
+1. Make a clone of the repository <https://github.com/Deker39/Mega-Shop-Site.git>
+2. Install to librery whose you dosen't have.
+4. Import in a MySQL Workbench file `db.sql`, and after to chek a connect to db.
+5. Open to console and go to forward folder mysite.
+6. Write `python manage.py runserver`, if everything it ok, site it started
 
   
   
