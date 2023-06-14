@@ -116,7 +116,7 @@ CREATE TABLE `auth_user` (
   `date_joined` datetime(6) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -125,7 +125,7 @@ CREATE TABLE `auth_user` (
 
 LOCK TABLES `auth_user` WRITE;
 /*!40000 ALTER TABLE `auth_user` DISABLE KEYS */;
-INSERT INTO `auth_user` VALUES (1,'pbkdf2_sha256$390000$GaKfDV1CUWLP2gAdsiSuAb$d9pUSZvP9MgLvIMxtbgbv+iT5TBgZT38bfK5/ZMnNSs=','2023-05-21 19:18:01.625496',1,'admin','','','kek@gmail.com',1,1,'2023-05-17 19:01:08.105395'),(10,'pbkdf2_sha256$390000$VRPejmjrbyL3ZW5GpD9QzV$NWKMQkYvV32bxgp4YjLh5Ts6HboJG/9s7znyX9+Dwrc=','2023-05-24 20:16:55.892668',0,'bigtigerlesha@gmail.com','','','bigtigerlesha@gmail.com',0,1,'2023-05-21 09:01:06.614775'),(11,'pbkdf2_sha256$390000$0ixTy5Sa2EjrZVMVnAmgE6$xX/WnVU2sJBcPAIRn2wLEFLdjaprtb8OTfost7U34qE=','2023-05-24 20:19:52.907036',0,'alexey.holenko@gmail.com','','','alexey.holenko@gmail.com',0,1,'2023-05-24 20:19:52.682905');
+INSERT INTO `auth_user` VALUES (1,'pbkdf2_sha256$390000$GaKfDV1CUWLP2gAdsiSuAb$d9pUSZvP9MgLvIMxtbgbv+iT5TBgZT38bfK5/ZMnNSs=','2023-06-13 18:01:29.012551',1,'admin','','','kek@gmail.com',1,1,'2023-05-17 19:01:08.105395'),(11,'pbkdf2_sha256$390000$LPbQhej9NENbawuJDUtqeL$xrw4SlZPuc6r9gKZrOqax7ifvfVoMCMvIkyzRGBqocE=','2023-05-28 20:44:00.550291',0,'alexey.holenko@gmail.com','','','alexey.holenko@gmail.com',0,1,'2023-05-24 20:19:52.682905'),(12,'pbkdf2_sha256$390000$SSEfg0VBSlQJYrE5tRGfJz$uEpo2lb7w21UNS/CR+QumGmdF9fUMXvQOhHuhFxpX9w=','2023-06-13 18:03:06.413874',0,'bigtigerlesha@gmail.com','','','bigtigerlesha@gmail.com',0,1,'2023-05-25 19:46:32.323881'),(14,'pbkdf2_sha256$390000$cImrOfvN9mmPodBkodmWdr$7bk9L1GBtJNFR6z+jxIWL74agLAWPXTvyJ/H+9EmkYs=','2023-06-12 17:17:26.052577',0,'kek@gmail.com','','','kek@gmail.com',0,1,'2023-06-12 17:17:25.800981'),(16,'pbkdf2_sha256$390000$UAHSNm7548YoNYtyyF3lBs$vNurj8z5KxseJAh1qXmljgrYECZ4lubcs6d5YjzmTdc=','2023-06-12 17:27:32.199124',0,'bigtiger@gmail.com','','','bigtiger@gmail.com',0,1,'2023-06-12 17:27:31.966433'),(17,'pbkdf2_sha256$390000$34WmGJJJ54XaUlEni7UkzK$Ob7SWv1dMllKHvSdeA4evKhAsB7FSkLoHifc7gpfeLc=','2023-06-12 19:32:32.032124',0,'example@gmial.com','','','example@gmial.com',0,1,'2023-06-12 19:32:31.784115'),(18,'pbkdf2_sha256$390000$879m6YsD3Chj2piVThreC0$5bQasMcRaYsrHhSTZE/9mFMWNNdX2u4+tg5RbCFmE9s=','2023-06-12 19:49:59.906716',0,'big@gmail.com','','','big@gmail.com',0,1,'2023-06-12 19:49:59.662833');
 /*!40000 ALTER TABLE `auth_user` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -294,7 +294,7 @@ CREATE TABLE `django_session` (
 
 LOCK TABLES `django_session` WRITE;
 /*!40000 ALTER TABLE `django_session` DISABLE KEYS */;
-INSERT INTO `django_session` VALUES ('c7myd7gf62p85che0yk6m8rn8g3eb95f','.eJxVjDsOwjAQBe_iGlnrv0NJnzNYXnuNA8iR4qRC3J1ESgHtm5n3ZiFuaw1bpyVMmV2ZAHb5HTGmJ7WD5Eds95mnua3LhPxQ-Ek7H-dMr9vp_h3U2OtekyKUSCY6cCCs0GpQpoCxsmBx2WcXNSYtZXZaKZUATZK7a7wfrAXHPl_34zcQ:1q1X14:HyDh7XhZnLMFbMOGka8NFC2gDVF-vjo-gDs1nU-mj0o','2023-06-06 18:45:50.624862'),('d796m6rq1og5v5931y4dacugj3g4yk52','e30:1pzkFY:gyiYT_osaofmIVnnKoA0c_ngZRg8HU5-8AF3wbdN8uw','2023-06-01 20:29:24.622711'),('fx7327stg12ghzde777q8g5g4lmnhfc5','.eJxVjDsOwjAQBe_iGlnGm_hDSZ8zWOvdNQ6gRIqTCnF3iJQC2jcz76USbmtNW5MljawuKqrT75aRHjLtgO843WZN87QuY9a7og_a9DCzPK-H-3dQsdVvbTOLOMrWGELoChQGLwy9eONdJhcKWYyWA-buDC4Cmr6znlyPaEJQ7w8KGzgs:1q0Lvp:MFY5gDgIQ2mchB_7Ol8h35GLUc2gg5j-HKlkUMQEJcw','2023-06-03 12:43:33.607758'),('re84gltnmyx43zm4k6vnxwcprvho9ldi','.eJxVjDsOwjAQBe_iGlnx-k9JzxmstXeDA8iR4qRC3B0ipYD2zcx7iYTbWtPWeUkTibNQSpx-x4zlwW0ndMd2m2WZ27pMWe6KPGiX15n4eTncv4OKvX5rZ3TMA2G06FAVBh9cUA79qEFHVmzLEFFTML6AN0Q0AgdyGgxbB168P_pNN7M:1q1uxc:U3OVcb8pGyDq0kt6BMjZmCRKVgP_zCbS853yBpI8p8s','2023-06-07 20:19:52.910502'),('yv3zlwgkr3b02i2e42irzcw9x2q0hhx5','.eJxVjDsOwjAQBe_iGlnrv0NJnzNYXnuNA8iR4qRC3J1ESgHtm5n3ZiFuaw1bpyVMmV2ZAHb5HTGmJ7WD5Eds95mnua3LhPxQ-Ek7H-dMr9vp_h3U2OtekyKUSCY6cCCs0GpQpoCxsmBx2WcXNSYtZXZaKZUATZK7a7wfrAXHPl_34zcQ:1q19w8:nyCjfDWLf8eOV-JImBgGGTjlIxNuvinsH8hNW56NOwY','2023-06-05 18:07:12.046797');
+INSERT INTO `django_session` VALUES ('9uatr39h2zeba6bmunw2ayee2a5uhfjy','.eJxVjEEOgjAQRe_StWmmQwdbl-45A5nOtIIaSCisjHdXEha6_e-9_zI9b-vQbzUv_ajmYhya0--YWB552oneebrNVuZpXcZkd8UetNpu1vy8Hu7fwcB1-NYMkYFjQS1eQTGphywNCQdsI1BTMgRiKo4CaXBJovehPYMIEiCZ9wcWajfG:1q98ME:ZC2wnpNqzgQRhzcpC672mCh3sseAVPo2oDUI_onCWxM','2023-06-27 18:03:06.419189'),('c7myd7gf62p85che0yk6m8rn8g3eb95f','.eJxVjDsOwjAQBe_iGlnrv0NJnzNYXnuNA8iR4qRC3J1ESgHtm5n3ZiFuaw1bpyVMmV2ZAHb5HTGmJ7WD5Eds95mnua3LhPxQ-Ek7H-dMr9vp_h3U2OtekyKUSCY6cCCs0GpQpoCxsmBx2WcXNSYtZXZaKZUATZK7a7wfrAXHPl_34zcQ:1q1X14:HyDh7XhZnLMFbMOGka8NFC2gDVF-vjo-gDs1nU-mj0o','2023-06-06 18:45:50.624862'),('d796m6rq1og5v5931y4dacugj3g4yk52','e30:1pzkFY:gyiYT_osaofmIVnnKoA0c_ngZRg8HU5-8AF3wbdN8uw','2023-06-01 20:29:24.622711'),('fx7327stg12ghzde777q8g5g4lmnhfc5','.eJxVjDsOwjAQBe_iGlnGm_hDSZ8zWOvdNQ6gRIqTCnF3iJQC2jcz76USbmtNW5MljawuKqrT75aRHjLtgO843WZN87QuY9a7og_a9DCzPK-H-3dQsdVvbTOLOMrWGELoChQGLwy9eONdJhcKWYyWA-buDC4Cmr6znlyPaEJQ7w8KGzgs:1q0Lvp:MFY5gDgIQ2mchB_7Ol8h35GLUc2gg5j-HKlkUMQEJcw','2023-06-03 12:43:33.607758'),('yv3zlwgkr3b02i2e42irzcw9x2q0hhx5','.eJxVjDsOwjAQBe_iGlnrv0NJnzNYXnuNA8iR4qRC3J1ESgHtm5n3ZiFuaw1bpyVMmV2ZAHb5HTGmJ7WD5Eds95mnua3LhPxQ-Ek7H-dMr9vp_h3U2OtekyKUSCY6cCCs0GpQpoCxsmBx2WcXNSYtZXZaKZUATZK7a7wfrAXHPl_34zcQ:1q19w8:nyCjfDWLf8eOV-JImBgGGTjlIxNuvinsH8hNW56NOwY','2023-06-05 18:07:12.046797');
 /*!40000 ALTER TABLE `django_session` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -342,7 +342,7 @@ CREATE TABLE `shop_commentproduct` (
   KEY `shop_commentproduct_auth_id_e5badea9_fk_shop_shopuser_id` (`auth_id`),
   CONSTRAINT `shop_commentproduct_auth_id_e5badea9_fk_shop_shopuser_id` FOREIGN KEY (`auth_id`) REFERENCES `shop_shopuser` (`id`),
   CONSTRAINT `shop_commentproduct_product_id_c012b30a_fk_shop_product_id` FOREIGN KEY (`product_id`) REFERENCES `shop_product` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -351,6 +351,7 @@ CREATE TABLE `shop_commentproduct` (
 
 LOCK TABLES `shop_commentproduct` WRITE;
 /*!40000 ALTER TABLE `shop_commentproduct` DISABLE KEYS */;
+INSERT INTO `shop_commentproduct` VALUES (1,'good game))','2012-06-23 00:00:00.000000',6,1),(2,'amazing story in this product','2023-06-12 18:19:33.827406',7,1),(3,'amazing story in this product','2023-06-12 18:20:28.327986',7,5),(4,'amazing story in this product','2023-06-12 18:20:35.591012',7,6),(5,'cool game guys!!','2023-06-12 19:32:47.862429',10,1),(6,'qwer','2023-06-12 19:50:06.677221',11,1);
 /*!40000 ALTER TABLE `shop_commentproduct` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -370,7 +371,7 @@ CREATE TABLE `shop_order` (
   PRIMARY KEY (`id`),
   KEY `shop_order_user_id_00aba627_fk_shop_shopuser_id` (`user_id`),
   CONSTRAINT `shop_order_user_id_00aba627_fk_shop_shopuser_id` FOREIGN KEY (`user_id`) REFERENCES `shop_shopuser` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -379,7 +380,7 @@ CREATE TABLE `shop_order` (
 
 LOCK TABLES `shop_order` WRITE;
 /*!40000 ALTER TABLE `shop_order` DISABLE KEYS */;
-INSERT INTO `shop_order` VALUES (26,1,'2023-05-23 19:40:29.607603',5,522.00),(29,1,'2023-05-23 20:07:40.447696',5,55.00),(30,0,'2023-05-24 20:17:18.813787',5,0.00),(32,0,'2023-05-24 21:46:09.777101',6,500.00);
+INSERT INTO `shop_order` VALUES (32,0,'2023-05-25 18:05:51.449870',6,0.00),(33,1,'2023-05-25 19:48:11.108014',7,500.00),(34,1,'2023-05-25 19:51:06.372006',7,80.00),(35,1,'2023-05-28 20:16:52.465051',7,402.00),(36,1,'2023-06-03 19:23:48.123036',7,522.00),(37,1,'2023-06-03 19:27:13.834600',7,500.00),(38,0,'2023-06-12 18:21:04.327197',7,0.00),(39,1,'2023-06-12 19:33:23.897283',10,22.00),(40,1,'2023-06-12 19:50:33.238814',11,350.00);
 /*!40000 ALTER TABLE `shop_order` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -401,7 +402,7 @@ CREATE TABLE `shop_orderslist` (
   CONSTRAINT `shop_orderslist_order_id_c4bef68e_fk_shop_order_id` FOREIGN KEY (`order_id`) REFERENCES `shop_order` (`id`),
   CONSTRAINT `shop_orderslist_product_id_b3603f5b_fk_shop_product_id` FOREIGN KEY (`product_id`) REFERENCES `shop_product` (`id`),
   CONSTRAINT `shop_orderslist_chk_1` CHECK ((`quantity` >= 0))
-) ENGINE=InnoDB AUTO_INCREMENT=48 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=104 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -410,7 +411,7 @@ CREATE TABLE `shop_orderslist` (
 
 LOCK TABLES `shop_orderslist` WRITE;
 /*!40000 ALTER TABLE `shop_orderslist` DISABLE KEYS */;
-INSERT INTO `shop_orderslist` VALUES (26,26,1,1),(27,26,4,1),(28,26,3,1),(29,26,30,1),(31,29,28,1),(47,32,2,1);
+INSERT INTO `shop_orderslist` VALUES (76,33,2,1),(77,34,7,1),(78,34,10,1),(89,35,6,1),(90,35,8,1),(91,35,7,1),(92,35,14,1),(94,36,2,1),(95,36,30,1),(96,37,2,1),(100,39,30,1),(101,40,1,1),(103,40,3,1);
 /*!40000 ALTER TABLE `shop_orderslist` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -466,7 +467,7 @@ CREATE TABLE `shop_productkey` (
   KEY `shop_productkey_order_id_2f914e91_fk_shop_order_id` (`order_id`),
   CONSTRAINT `shop_productkey_order_id_2f914e91_fk_shop_order_id` FOREIGN KEY (`order_id`) REFERENCES `shop_order` (`id`),
   CONSTRAINT `shop_productkey_products_id_c32750a8_fk_shop_product_id` FOREIGN KEY (`products_id`) REFERENCES `shop_product` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -475,7 +476,7 @@ CREATE TABLE `shop_productkey` (
 
 LOCK TABLES `shop_productkey` WRITE;
 /*!40000 ALTER TABLE `shop_productkey` DISABLE KEYS */;
-INSERT INTO `shop_productkey` VALUES (6,'S83I3M1JXH',1,26),(7,'Y1TCN9NP5F',4,26),(8,'IPL2VPH5VE',3,26),(9,'EAJNIWPBCS',30,26),(17,'EKHJKFXV3R',2,32),(18,'U6AJHUJOCA',2,32),(19,'MVEOKMMXNF',2,32),(20,'NCRDFIJETX',2,32),(21,'2OS0KSZA2K',2,32),(22,'QHTZIV4XKU',2,32),(23,'HJOUYVKMZE',2,32),(24,'JMYOGLX5UM',2,32),(25,'IXW7P3QTIK',2,32),(26,'OVEQ5WEELI',2,32),(27,'SBZNPHVP3N',2,32);
+INSERT INTO `shop_productkey` VALUES (17,'EKHJKFXV3R',2,32),(18,'U6AJHUJOCA',2,32),(19,'MVEOKMMXNF',2,32),(20,'NCRDFIJETX',2,32),(21,'2OS0KSZA2K',2,32),(22,'QHTZIV4XKU',2,32),(23,'HJOUYVKMZE',2,32),(24,'JMYOGLX5UM',2,32),(25,'IXW7P3QTIK',2,32),(26,'OVEQ5WEELI',2,32),(27,'SBZNPHVP3N',2,32),(28,'HQBY1VCVRC',2,33),(29,'G7EQKGAMBN',7,34),(30,'WEBTFKB0VS',10,34),(31,'0RRZTFYRIK',6,35),(32,'ICWF7QFDZD',8,35),(33,'QZFXJH6RYN',7,35),(34,'SEQXEQXZQW',14,35),(35,'CYZMED0JL2',2,36),(36,'BXXTDVJT7S',30,36),(37,'AGFC7XKHAP',2,37),(38,'HZDOWTO1TL',30,39),(39,'PBQWXZ5QB8',1,40),(40,'ZKNLRZJYVX',3,40);
 /*!40000 ALTER TABLE `shop_productkey` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -579,7 +580,7 @@ CREATE TABLE `shop_shopuser` (
   `date_create` datetime(6) NOT NULL,
   `phone` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -588,7 +589,7 @@ CREATE TABLE `shop_shopuser` (
 
 LOCK TABLES `shop_shopuser` WRITE;
 /*!40000 ALTER TABLE `shop_shopuser` DISABLE KEYS */;
-INSERT INTO `shop_shopuser` VALUES (5,'Alexey','Holenko','bigtigerlesha@gmail.com','1234','2023-05-24 20:12:52.481970','+380986074515'),(6,'Laki','Lakovich','alexey.holenko@gmail.com','1111','2023-05-24 21:24:50.875307','0986074515');
+INSERT INTO `shop_shopuser` VALUES (6,'Laki','Lakovich','alexey.holenko@gmail.com','1234','2023-05-28 20:41:48.440928','0986074515'),(7,'Alexey','Keke','bigtigerlesha@gmail.com','1234','2023-06-03 19:26:55.561547','0986074515'),(8,'Laki','Lakovich','kek@gmail.com','0000','2023-06-12 17:17:26.040420','0986074515'),(9,'Alexey','Golenko','bigtiger@gmail.com','1234','2023-06-12 17:27:32.188494','0986074515'),(10,'Alexey','Golenko','example@gmial.com','1234','2023-06-12 19:33:06.272151','33333333333'),(11,'Alexey','Holenko','big@gmail.com','1234','2023-06-12 19:50:23.909550','0986074515');
 /*!40000 ALTER TABLE `shop_shopuser` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -601,4 +602,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-05-25  0:48:19
+-- Dump completed on 2023-06-14 23:45:49
