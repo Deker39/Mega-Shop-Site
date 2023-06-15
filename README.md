@@ -41,18 +41,16 @@ To store and manage data, a database structure was created based on the linked t
 
 ## Table structure: 
 <p align="center">
-  <img src="https://github.com/Deker39/CV/assets/44725291/7487939a-3611-4461-be49-90404198124c" alt="Your Image">
+  <img src="https://github.com/Deker39/CV/assets/44725291/7487939a-3611-4461-be49-90404198124c">
 </p>
 
 ## To install you will need:
 
 1. Make a clone of the repository <https://github.com/Deker39/Mega-Shop-Site.git>
 2. Install to librery whose you dosen't have or to run file `requirements.txt` commands `pip install -r requirements.txt`.
-4. Import in a MySQL Workbench file `db.sql`, and after to chek a connect to db, don't forget to change `username`, `password` and `name_db`.
-5. Open to console and go to forward folder mysite.
-6. Write `python manage.py runserver`, if everything it ok, site it started
-
-  
+3. Import in a MySQL Workbench file `db.sql`, and after to chek a connect to db, don't forget to change `USER`, `PASSWORD` and `NAME` in the file `setting.py`.
+4. Open to console and go to forward folder `mysite`.
+5. Write `python manage.py runserver`, if everything it ok, site it started.
   
 ## Video view
 
