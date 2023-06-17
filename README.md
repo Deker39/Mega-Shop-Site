@@ -44,7 +44,7 @@ To store and manage data, a database structure was created based on the linked t
   <img src="https://github.com/Deker39/CV/assets/44725291/7487939a-3611-4461-be49-90404198124c">
 </p>
 
-## To install you will need:
+## You can run this project locally just do:
 
 1. Make a clone of the repository <https://github.com/Deker39/Mega-Shop-Site.git>
 2. Install to librery whose you dosen't have or to run file `requirements.txt` commands `pip install -r requirements.txt`.
