@@ -26,7 +26,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'mysite.middleware.SearchMiddleware'
+    'mysite.middleware.SearchMiddleware',
+    'mysite.middleware.AdminRequiredMiddleware'
 
 ]
 
@@ -35,7 +36,7 @@ ROOT_URLCONF = 'mysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['shop/templates'],
+            'DIRS': ['shop/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -57,12 +58,18 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'mysite',
-        'HOST': '127.0.0.1',
+        'HOST': '127.0.0.2',
         'USER': "root",
         'PASSWORD': '26091998Qwe',
         'PORT': '3306'
     }
 }
+
+# AUTH_USER_MODEL = 'mysite.ShopUser'
+#
+# AUTHENTICATION_BACKENDS = (
+#     'django.contrib.auth.backends.ModelBackend',
+# )
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -100,7 +107,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'bigtigerlesha@gmail.com'  # ваш адрес электронной почты
-EMAIL_HOST_PASSWORD = 'dvhrjnbyslwgkdgk'  # ваш пароль от электронной почты
+EMAIL_HOST_PASSWORD = '300319908@qwe'  # ваш пароль от электронной почты
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 # dvhrjnbyslwgkdgk

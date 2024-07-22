@@ -17,7 +17,10 @@ personal_list_info = [[name, url] for name, url in zip(name_menu, url_menu)]
 
 def cart_checkout(request):
     if request.user.is_authenticated:
-        user_id = ShopUser.objects.get(email=request.user.username).id
+        try:
+            user_id = ShopUser.objects.get(email=request.user.username).id
+        except ShopUser.DoesNotExist:
+            return False
         check_order_t = Order.objects.filter(user_id=user_id, complete=0, total_amount=0).first()
         check_order = Order.objects.filter(user_id=user_id, complete=0).first()
         return True if check_order_t or check_order_t is None and check_order is None else False
@@ -251,20 +254,23 @@ def signin(request):
         return redirect('/')
     else:
         if request.method == "POST":
-            log_user = ShopUser()
-            log_user.email = request.POST.get('emailAddressInput')
-            log_user.password = request.POST.get('passwordInput')
+            # log_user = ShopUser()
+            email = request.POST.get('emailAddressInput')
+            password = request.POST.get('passwordInput')
 
-            user = authenticate(username=log_user.email, password=log_user.password)
+            user = authenticate(username=email, password=password)
             if user is not None:
                 login(request, user)
                 context['user'] = False
-                return redirect('index')
-            else:
-                if not ShopUser.objects.filter(email=log_user.email):
-                    context['emailNotExists'] = f'{log_user.email}'
+                if user.is_superuser:
+                    return redirect(reverse('admin:index'))
                 else:
-                    context['emailForNotCorrectPass'] = log_user.email
+                    return redirect('index')
+            else:
+                if not ShopUser.objects.filter(email=email):
+                    context['emailNotExists'] = f'{email}'
+                else:
+                    context['emailForNotCorrectPass'] = email
 
     return render(request, 'entrance_page.html', context=context)
 
